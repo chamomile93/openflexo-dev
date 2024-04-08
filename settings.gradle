@@ -11,6 +11,7 @@ includeBuild '../gina'
 includeBuild '../pamela'
 includeBuild '../openflexo-utils'
 includeBuild '../openflexo-core'
+includeBuild '../openflexo-ui'
 includeBuild '../modelers'
 includeBuild '../openflexo-integration-tests'
 includeBuild '../openflexo-packaging'
@@ -36,6 +37,9 @@ includeBuild '../openflexo-pptx'
 includeBuild '../openflexo-rhapsody'
 includeBuild '../openflexo-xlsx'
 includeBuild '../openflexo-xml'
+
+// Server
+includeBuild '../openflexo-server'
 
 // Application modules
 includeBuild '../openflexo-modules'
