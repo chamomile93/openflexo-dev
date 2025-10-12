@@ -2,11 +2,11 @@
 
 // A task can explicitely depend on a set task of the sub projects
 // When you use the name of a subproject, it must be included by the settings.gradle file
-// task parser {
-// 	dependsOn gradle.includedBuild('connie').task(':connie-parser:sableccParser')
-// 	dependsOn gradle.includedBuild('openflexo-core').task(':fml-parser:sableccParser')
-// 	dependsOn gradle.includedBuild('openflexo-core').task(':fml-cli:sableccParser')
-// }
+task parser {
+	dependsOn gradle.includedBuild('connie').task(':connie-parser:sableccParser')
+	dependsOn gradle.includedBuild('openflexo-core').task(':fml-parser:sableccParser')
+	dependsOn gradle.includedBuild('openflexo-core').task(':fml-cli:sableccParser')
+}
 
 // Sometimes, you need to exclude some included projects
 // Here, `sub` contains the list of included projects except for the 'openflexo-buildplugin'
@@ -23,7 +23,7 @@ task dep {
 }
 
 task gitPull {
-     dependsOn sub*.task(':gitPull')
+    dependsOn sub*.task(':gitPull')
 }
 
 
