@@ -20,7 +20,7 @@ includeBuild '../openflexo-core'
 //includeBuild '../formod'
 
 // Technology adapters
-// includeBuild '../openflexo-technology-adapters'
+includeBuild '../openflexo-technology-adapters'
 // includeBuild '../openflexo-diagram'
 // includeBuild '../openflexo-docx'
 // includeBuild '../openflexo-emf'
