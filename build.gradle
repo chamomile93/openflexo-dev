@@ -34,9 +34,9 @@ task gitPull {
 // task designer {
 //     dependsOn gradle.includedBuild('openflexo-packaging').task(':packages:openflexo-designer:run')
 // }
-// task maintainer {
-//     dependsOn gradle.includedBuild('openflexo-packaging').task(':packages:flexomaintainer:run')
-// }
+ task maintainer {
+     dependsOn gradle.includedBuild('openflexo-packaging').task(':packages:flexomaintainer:run')
+ }
 // task formose {
 //     dependsOn gradle.includedBuild('formose').task(':formose-app:run')
 // }
